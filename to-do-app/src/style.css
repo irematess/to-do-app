@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 03;
+}
+
+.container{
+    padding: 7rem;
+    height: 100vh;
+    background-image: url("https://www.shutterstock.com/image-vector/seamless-black-white-cow-pattern-600nw-563778676.jpg");
+}
+
+.to-do-list{
+    padding: 2rem 10rem 5rem 10rem;
+    border-radius: 3rem;
+    background-color: white;
+}
+
+li{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+li{
+    border-bottom: 1px solid black;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family:'Courier New', Courier, monospace;
+}
+
+li input{
+    margin-right: .5rem;
+}
+
+.newTodo{
+    display:inline-block;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    width: 85rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2rem;
+}
+
+.newTodo:value{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.completed{
+    text-decoration: line-through;
+}
+
+
+
