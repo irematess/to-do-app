@@ -48,10 +48,11 @@ const handleNewCreateTodo = () => {
     <div class="to-do-list">
         <h2>to do list</h2>
         <ul>
-            <li :class="{completed : tdo.isDone}" v-for="tdo in todos" ><input type="checkbox" v-model="tdo.isDone">{{ tdo.todo }}</li>
-            <li><input type="text" class="newTodo" v-model="newTodo" @keydown.enter="handleNewCreateTodo"></li>
-            
+            <li :class="{completed : tdo.isDone}" v-for="tdo in todos" ><input type="checkbox" v-model="tdo.isDone">{{ tdo.todo }}
+            </li>  
         </ul>
+        <div><input type="text" class="newTodo" v-model="newTodo" @keydown.enter="handleNewCreateTodo"></div>
+        
     </div>
   </div>
 </template>
