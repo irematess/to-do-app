@@ -45,8 +45,8 @@ li input{
     display:inline-block;
     border: none;
     outline: none;
-    border-bottom: 1px solid black;
-    width: 85rem;
+    /* border-bottom: 1px solid black; */
+    /* width: 85rem; */
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.2rem;
 }

@@ -32,19 +32,6 @@ const todos = ref([
     },
 ]);
 
-const handleClick = (tdo) => {
-   console.log(tdo)
-    todos.value = todos.value.map(t =>{
-        if(t.todo == tdo.todo){
-            t.isDone = !t.isDone
-        }
-        return t
- })
- console.log(tdo)
-
- 
-}
-
 const newTodo = ref('');
 const handleNewCreateTodo = () => {
   todos.value.push({
@@ -61,8 +48,9 @@ const handleNewCreateTodo = () => {
     <div class="to-do-list">
         <h2>to do list</h2>
         <ul>
-            <li :class="{completed : tdo.isDone}" v-for="tdo in todos" ><input type="checkbox" @click="handleClick(tdo)">{{ tdo.todo }}</li>
-            <input type="text" class="newTodo" v-model="newTodo" @keydown.enter="handleNewCreateTodo">
+            <li :class="{completed : tdo.isDone}" v-for="tdo in todos" ><input type="checkbox" v-model="tdo.isDone">{{ tdo.todo }}</li>
+            <li><input type="text" class="newTodo" v-model="newTodo" @keydown.enter="handleNewCreateTodo"></li>
+            
         </ul>
     </div>
   </div>
